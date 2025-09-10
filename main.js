@@ -128,20 +128,5 @@ window.addEventListener('DOMContentLoaded', () => {
   const previewDiv = document.createElement('div');
   previewDiv.className = 'picture-preview';
   document.body.appendChild(previewDiv);
-
-  // Only show preview on image click
-  document.addEventListener('click', function(e) {
-    // Image clicked; show preview
-    if (e.target.tagName === 'IMG' && e.target.alt.startsWith('Bilde av')) {
-      previewDiv.innerHTML = `<img src="${e.target.src}" alt="${e.target.alt}">`;
-      previewDiv.style.display = 'block';
-    } else if (
-      previewDiv.style.display === 'block' &&
-      !previewDiv.contains(e.target)
-    ) {
-      // Clicked outside preview; hide it
-      previewDiv.style.display = 'none';
-      previewDiv.innerHTML = '';
-    }
-  });
 });
+
