@@ -85,14 +85,16 @@ body {
     border-style: dotted;
 }
 .medlem_oversikt {
-    display: flex;
-    flex-direction: column;
-    padding-left: 10rem;
-    padding-right: 10rem;
-    gap: 1rem;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(250px, 1fr)); /* responsive */
+    gap: 5rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    justify-content: center;
 }
 .medlem_instans {
     padding: 0;
+    width: auto;
     border-style: solid;
     border-radius: 2.6rem;
     border-color: #D1D5DB;
@@ -102,29 +104,28 @@ body {
                 0 1px 2px rgba(0, 0, 0, 0.06);
     text-align: left;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: flex-start;
 }
 .Personbilde {
-    width:10rem;
-    height:10rem;
-    border-radius:25%;
+    width: 100%;
+    height: auto;
+    border-radius:5%;
     object-fit:cover;
     margin-bottom:0px;
     border-style: solid;
     border-width: 0.5px;
     border-color: black;
+    padding: 0
 }
 .medlem_instans_tekst_boks {
+    font-family: "Consolas", "Andale Mono", "Lucida Console", monospace;
     align-self: center;
     display: flex;
     flex-direction: column;
-    width: 65%;
-    padding: 1rem;
-    padding-right: 2rem;
-    border-color: transparent;
-    border-right: #D1D5DB;
-    border-style: dotted;
+    width: 100%;
+    padding: 0rem;
+    padding-right: 0rem;
 }
 .medlem_instans p {
     margin: 0;
@@ -135,12 +136,13 @@ body {
 }
 .kontaktinfo {
     color: black;
-    padding-left: 1rem;
-    padding-right: 1rem;
+    padding-left: 0rem;
+    padding-right: 0rem;
     display: flex;
     align-items: center;
     flex-direction: column;
     align-self: center;
+    padding: 0
 }
 .kontaktinfo a {
     text-decoration: none;
@@ -154,10 +156,12 @@ body {
     display: flex;
     align-items: center;
     flex-direction: row;
+    padding: 0
 }
 .tlf_mail {
     font-size: small;
-    padding-top: 1rem;
+    padding-top: 0rem;
+    padding: 0
 }
 h1 {
     text-align: center;    
@@ -184,3 +188,11 @@ h1 {
     display: block;
 }
 
+/* Select the 4th and 5th members (the last row) */
+.medlem_instans:nth-child(4) {
+  grid-column: 1 / 2;  /* first of the second row → middle-left column */
+}
+
+.medlem_instans:nth-child(5) {
+  grid-column: 2 / 3;  /* second of the second row → middle-right column */
+}
