@@ -49,7 +49,7 @@ const members = [
     linkedin: "https://www.linkedin.com/in/eivind-hovden-breivik-979241381/",
     mail: "eivind.h.breivik@gmail.com",
     tlf: "924 25 601",
-    skills: [""]
+    skills: ["x", "y", "z"]
   },
   {
     name: "William Jondahl",
@@ -61,7 +61,7 @@ const members = [
     linkedin: "https://www.linkedin.com/in/william-jondahl-22b571382/",
     mail: "williamjondahl@gmail.com",
     tlf: "981 85 743",
-    skills: [""]
+    skills: ["x", "y", "z"]
   },
   {
     name: "Carl Andreas Arnegard",
@@ -73,7 +73,7 @@ const members = [
     linkedin: "https://www.linkedin.com/in/carl-andreas-arnegard-993996214/",
     mail: "carl.andreas.arnegard@gmail.com",
     tlf: "994 94 801",
-    skills: [""]
+    skills: ["x", "y", "z"]
   },
   {
     name: "Nicolay Lehne-Torp",
@@ -84,7 +84,7 @@ const members = [
     linkedin: "https://www.linkedin.com/in/nicolay-lehne-torp-14b62a2ba/",
     mail: "lehnenicolay@gmail.com",
     tlf: "466 26 871",
-    skills: [""]
+    skills: ["x", "y", "z"]
   }
 ];
 
@@ -112,6 +112,11 @@ function renderMembers() {
         </a>
         <text class="tlf_mail">${m.mail}</text>
         <text class="tlf_mail">${m.tlf}</text>
+      </div>
+      <div class="medlem_attributter">
+        <text>${m.skills[0]}</text>
+        <text>${m.skills[1]}</text>
+        <text>${m.skills[2]}</text>
       </div>
     `;
     container.appendChild(div);
