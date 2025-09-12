@@ -116,7 +116,7 @@ body {
     border-style: solid;
     border-width: 0.5px;
     border-color: black;
-    padding: 0
+    padding: 0;
 }
 .medlem_instans_tekst_boks {
     font-family: "Consolas", "Andale Mono", "Lucida Console", monospace;
@@ -169,6 +169,31 @@ body {
     flex-direction: row;
     justify-content: space-around;
 }
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+  
+  20%, 80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%, 50%, 70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+
+  40%, 60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}
 .medlem_attributter text {
     border-color: #D1D5DB;
     border-style: solid;
@@ -178,7 +203,16 @@ body {
     padding-top: 3px;
     padding-bottom: 3px;
     font-size: large;
-    background-color: gold;
+    background-color: #ececec; 
+    animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+    transform: translate3d(0, 0, 0); /* Force hardware acceleration */
+    backface-visibility: hidden; /* Prevent potential visual glitches */   
+    animation-iteration-count: 2;
+    animation-timing-function: 1s;
+}
+
+.medlem_attributter text:hover {
+    background-color: lightgreen;
 }
 h1 {
     text-align: center;    
