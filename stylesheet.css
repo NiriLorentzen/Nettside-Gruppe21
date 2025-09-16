@@ -85,14 +85,20 @@ body {
     border-style: dotted;
 }
 .medlem_oversikt {
-    display: flex;
-    flex-direction: column;
-    padding-left: 10rem;
-    padding-right: 10rem;
-    gap: 1rem;
+    max-width: 1200px;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(250px, 1fr));
+    gap: 5rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    justify-content: center;
+    max-width: 1200px;
+    padding: 2rem;
 }
 .medlem_instans {
     padding: 0;
+    width: auto;
     border-style: solid;
     border-radius: 2.6rem;
     border-color: #D1D5DB;
@@ -102,29 +108,41 @@ body {
                 0 1px 2px rgba(0, 0, 0, 0.06);
     text-align: left;
     display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
+    flex-direction: column;
+    justify-content: flex-start;width: 100%;
+    max-width: 320px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.medlem_instans:nth-child(4) {
+    grid-column: 1 / 3;
+    grid-row: 2;
+}
+
+.medlem_instans:nth-child(5) {
+    grid-column: 2 / 4;
+    grid-row: 2;
 }
 .Personbilde {
-    width:10rem;
-    height:10rem;
-    border-radius:25%;
+    width: 100%;
+    height: auto;
+    border-radius:5%;
     object-fit:cover;
     margin-bottom:0px;
     border-style: solid;
     border-width: 0.5px;
     border-color: black;
+    padding: 0;
 }
 .medlem_instans_tekst_boks {
+    font-family: "Consolas", "Andale Mono", "Lucida Console", monospace;
     align-self: center;
     display: flex;
     flex-direction: column;
-    width: 65%;
-    padding: 1rem;
-    padding-right: 2rem;
-    border-color: transparent;
-    border-right: #D1D5DB;
-    border-style: dotted;
+    width: 100%;
+    padding: 0rem;
+    padding-right: 0rem;
 }
 .medlem_instans p {
     margin: 0;
@@ -135,12 +153,13 @@ body {
 }
 .kontaktinfo {
     color: black;
-    padding-left: 1rem;
-    padding-right: 1rem;
+    padding-left: 0rem;
+    padding-right: 0rem;
     display: flex;
     align-items: center;
     flex-direction: column;
     align-self: center;
+    padding: 0
 }
 .kontaktinfo a {
     text-decoration: none;
@@ -154,33 +173,40 @@ body {
     display: flex;
     align-items: center;
     flex-direction: row;
+    padding: 0
 }
 .tlf_mail {
     font-size: small;
-    padding-top: 1rem;
+    padding-top: 0rem;
+    padding: 0
+}
+.medlem_attributter {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.medlem_attributter text {
+    border-color: #D1D5DB;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 10%;
+    padding: 7px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    font-size: large;
+    background-color: gold;
+}
+.medlem_attributter text:hover {
+    background-color: lightgreen;
 }
 h1 {
     text-align: center;    
     font-size: 3rem;
 }
-.picture-preview {
-    position: fixed;
-    top: 10%;
-    left: 50%;
-    transform: translateX(-50%);
-    display: none;
-    z-index: 1000;
-    border: 2px solid #354569;
-    background: ivory;
-    padding: 10px;
-    box-shadow: 0 4px 24px rgba(0,0,0,0.22);
-    border-radius: 10px;
-    max-width: 480px;
-    max-height: 540px;
-}
-.picture-preview img {
-    max-width: 100%;
-    max-height: 500px;
-    display: block;
-}
 
+@media (max-width: 1520px) {
+  .medlem_oversikt {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+}
