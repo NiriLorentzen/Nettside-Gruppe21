@@ -140,17 +140,17 @@ function renderMembers() {
   });
 }
 
-function openModal(member) {
+function openModal(m) {
   const modal = document.getElementById("memberModal");
   const modalBody = document.getElementById("modalBody");
 
   modalBody.innerHTML = `
-    <h2>${member.name}</h2>
-    <h3>${member.role}</h3>
-    <p><strong>Alder:</strong> ${member.age}</p>
-    <p><strong>Fra:</strong> ${member.origin}</p>
+    <h2>${m.name}</h2>
+    <h3>${m.role}</h3>
+    <p><strong>Alder:</strong> ${m.age}</p>
+    <p><strong>Fra:</strong> ${m.origin}</p>
     <hr>
-    <p>${member.description}</p>  
+    <p>${m.description}</p>  
   `;
 
   modal.classList.add("show");
