@@ -116,7 +116,7 @@ body {
     border-style: solid;
     border-width: 0.5px;
     border-color: black;
-    padding: 0
+    padding: 0;
 }
 .medlem_instans_tekst_boks {
     font-family: "Consolas", "Andale Mono", "Lucida Console", monospace;
@@ -178,7 +178,11 @@ body {
     padding-top: 3px;
     padding-bottom: 3px;
     font-size: large;
-    background-color: gold;
+    background-color: #ececec;
+}
+
+.medlem_attributter text:hover {
+    background-color: lightgreen;
 }
 h1 {
     text-align: center;    
