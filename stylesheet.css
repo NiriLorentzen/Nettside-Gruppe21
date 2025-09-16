@@ -82,6 +82,8 @@ body {
     border-color: transparent;
     border-right: ivory;
     border-style: dotted;
+    padding-right: 3px;
+    align-self: center;
 }
 .medlem_oversikt {
     margin: 0;
