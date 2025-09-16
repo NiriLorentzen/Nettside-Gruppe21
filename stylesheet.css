@@ -53,7 +53,7 @@ body {
 }
 
 .navbar {
-    background-color: #0C1524;
+    background-color: #96999d;
     height: 4.7rem;
     display: flex;
     justify-content: left;
@@ -71,12 +71,11 @@ body {
     transition: color 0.3s, box-shadow 0.3s, border-color 0.3s;
 }
 .navbar a:hover {
-    color: #FFD700;   
-    text-decoration: underline;
+    color: #aee5ff;   
     border-radius: 5px;
 }
 .navbar a.active {
-    color: #FFD700;
+    color: #aee5ff;
     border-radius: 5px;
 }
 .navbar img {
