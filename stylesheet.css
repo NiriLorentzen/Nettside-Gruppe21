@@ -87,11 +87,11 @@ body {
 .medlem_oversikt {
     max-width: 1200px;
     margin: 0;
-    padding-left: 1rem;
-    padding-right: 1rem;
     display: grid;
     grid-template-columns: repeat(3, minmax(250px, 1fr));
-    gap: 3rem;
+    gap: 5rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
     justify-content: center;
     max-width: 1200px;
     padding: 2rem;
@@ -133,7 +133,7 @@ body {
     border-style: solid;
     border-width: 0.5px;
     border-color: black;
-    padding: 0
+    padding: 0;
 }
 .medlem_instans_tekst_boks {
     font-family: "Consolas", "Andale Mono", "Lucida Console", monospace;
@@ -179,6 +179,26 @@ body {
     font-size: small;
     padding-top: 0rem;
     padding: 0
+}
+.medlem_attributter {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.medlem_attributter text {
+    border-color: #D1D5DB;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 10%;
+    padding: 7px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    font-size: large;
+    background-color: gold;
+}
+.medlem_attributter text:hover {
+    background-color: lightgreen;
 }
 h1 {
     text-align: center;    
