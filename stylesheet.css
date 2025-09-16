@@ -86,7 +86,7 @@ body {
 .medlem_oversikt {
     margin: 0;
     display: grid;
-    grid-template-columns: repeat(3, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 5rem;
     padding-left: 5rem;
     padding-right: 5rem;
@@ -95,6 +95,7 @@ body {
 .medlem_instans {
     padding: 0;
     width: auto;
+    max-width: 500px;
     border-style: solid;
     border-radius: 2.6rem;
     border-color: #D1D5DB;
@@ -111,6 +112,7 @@ body {
 }
 .Personbilde {
     width: 100%;
+    max-width: 500px;
     height: auto;
     border-radius:5%;
     object-fit:cover;
@@ -190,7 +192,14 @@ h1 {
     font-size: 3rem;
 }
 
-@media (max-width: 1520px) {
+
+@media (max-width: 3000px) {
+    .medlem_oversikt {
+        grid-template-columns: repeat(3, minmax(250px, 1000px));
+    }
+}
+
+@media (max-width: 1400px) {
   .medlem_oversikt {
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     }
