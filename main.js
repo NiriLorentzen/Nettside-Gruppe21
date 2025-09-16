@@ -172,7 +172,7 @@ window.addEventListener('DOMContentLoaded', () => {
   const modal = document.getElementById("memberModal");
   const closeBtn = document.querySelector(".close");
 
-  closeBtn.onclick = () => modal.style.display = "none";
+  closeBtn.onclick = () => closeModal();
   window.onclick = (event) => {
     if (event.target === modal) {
       closeModal();
