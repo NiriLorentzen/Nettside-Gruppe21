@@ -145,6 +145,7 @@ function openModal(m) {
   const modalBody = document.getElementById("modalBody");
 
   modalBody.innerHTML = `
+    <img class="personbilde_modal" src="${m.picture}" alt="Bilde av ${m.name}">
     <h2>${m.name}</h2>
     <h3>${m.role}</h3>
     <p><strong>Alder:</strong> ${m.age}</p>

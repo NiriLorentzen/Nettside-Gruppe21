@@ -135,6 +135,17 @@ body {
     border-color: black;
     padding: 0;
 }
+.personbilde_modal {
+    width: 100%;
+    max-width: 200px; 
+    height: auto;
+    display: block;
+    margin: 0 auto 1rem auto;
+    border-radius: 10%; 
+    object-fit: cover;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    transition: transform 0.3s ease;
+}
 .medlem_instans_tekst_boks {
     font-family: "Consolas", "Andale Mono", "Lucida Console", monospace;
     align-self: center;
