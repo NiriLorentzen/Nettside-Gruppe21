@@ -151,6 +151,10 @@ body {
 .medlem_instans em {
     margin-left: 0.2rem;
 }
+.medlem_instans:hover {
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 100),
+                0 1px 2px rgba(0, 0, 0, 100);
+}
 .kontaktinfo {
     color: black;
     padding-left: 0rem;
@@ -218,7 +222,7 @@ h1 {
   overflow: auto;
   background-color: rgba(0,0,0,0.6);
   opacity: 0;
-  transition: opacity 0.3s ease;
+  transition: opacity 0.4s ease;
 }
 
 .modal.show {
@@ -235,9 +239,6 @@ h1 {
   max-width: 600px;
   border-radius: 1rem;
   box-shadow: 0 5px 15px rgba(0,0,0,0.3);
-
-  transform: scale(0.8);
-  transition: transform 0.3s ease;
 }
 
 .modal-content h2 {
