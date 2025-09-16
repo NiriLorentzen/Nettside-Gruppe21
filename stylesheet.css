@@ -193,13 +193,15 @@ h1 {
     font-size: 3rem;
 }
 
-@media (max-width: 1520px) {
-  .medlem_oversikt {
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    }
-}
+
 @media (max-width: 3000px) {
     .medlem_oversikt {
         grid-template-columns: repeat(3, minmax(250px, 1000px));
+    }
+}
+
+@media (max-width: 1400px) {
+  .medlem_oversikt {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     }
 }
