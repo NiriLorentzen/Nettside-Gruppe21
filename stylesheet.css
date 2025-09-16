@@ -178,9 +178,8 @@ body {
     padding-top: 3px;
     padding-bottom: 3px;
     font-size: large;
-    background-color: #ececec;
+    background-color: gold;
 }
-
 .medlem_attributter text:hover {
     background-color: lightgreen;
 }
@@ -208,5 +207,3 @@ h1 {
     max-height: 500px;
     display: block;
 }
-
-
