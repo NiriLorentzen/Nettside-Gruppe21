@@ -1,7 +1,7 @@
 // Navbar HTML as a reusable template
 const navbarHTML = `
   <div class="navbar">
-    <img src="images/Logo.svg" width="4%" height="90%">
+    <img src="images/favicon.png" width=auto height="90%">
     <a href="index.html">Om oss</a>
     <a href="medlemmer.html">Medlemmer</a>
   </div>
