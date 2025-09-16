@@ -33,7 +33,6 @@ const members = [
     picture: "images/niri.jpg",
     linkedin: "https://www.linkedin.com/in/niri-a-lorentzen-409916381/",
     mail: "niri.lorentzen@gmail.com",
-    tlf: "917 41 899",
     skills: ["C#", "PostGreSQL", "Python", "Java"]
   },
   {
@@ -48,7 +47,6 @@ const members = [
     picture: "images/EivindProfBilde.jpg",
     linkedin: "https://www.linkedin.com/in/eivind-hovden-breivik-979241381/",
     mail: "eivind.h.breivik@gmail.com",
-    tlf: "924 25 601",
     skills: ["x", "y", "z"]
   },
   {
@@ -60,7 +58,6 @@ const members = [
     picture: "images/williamj.jpg",
     linkedin: "https://www.linkedin.com/in/william-jondahl-22b571382/",
     mail: "williamjondahl@gmail.com",
-    tlf: "981 85 743",
     skills: ["x", "y", "z"]
   },
   {
@@ -72,7 +69,6 @@ const members = [
     picture: "images/CarlBilde.JPG",
     linkedin: "https://www.linkedin.com/in/carl-andreas-arnegard-993996214/",
     mail: "carl.andreas.arnegard@gmail.com",
-    tlf: "994 94 801",
     skills: ["x", "y", "z"]
   },
   {
@@ -83,7 +79,6 @@ const members = [
     picture: "images/NicolayBilde.JPG",
     linkedin: "https://www.linkedin.com/in/nicolay-lehne-torp-14b62a2ba/",
     mail: "lehnenicolay@gmail.com",
-    tlf: "466 26 871",
     skills: ["x", "y", "z"]
   }
 ];
@@ -111,7 +106,6 @@ function renderMembers() {
           </div>
         </a>
         <text class="tlf_mail">${m.mail}</text>
-        <text class="tlf_mail">${m.tlf}</text>
       </div>
       <div class="medlem_attributter">
         <text>${m.skills[0]}</text>
@@ -133,20 +127,5 @@ window.addEventListener('DOMContentLoaded', () => {
   const previewDiv = document.createElement('div');
   previewDiv.className = 'picture-preview';
   document.body.appendChild(previewDiv);
-
-  // Only show preview on image click
-  document.addEventListener('click', function(e) {
-    // Image clicked; show preview
-    if (e.target.tagName === 'IMG' && e.target.alt.startsWith('Bilde av')) {
-      previewDiv.innerHTML = `<img src="${e.target.src}" alt="${e.target.alt}">`;
-      previewDiv.style.display = 'block';
-    } else if (
-      previewDiv.style.display === 'block' &&
-      !previewDiv.contains(e.target)
-    ) {
-      // Clicked outside preview; hide it
-      previewDiv.style.display = 'none';
-      previewDiv.innerHTML = '';
-    }
-  });
 });
+
