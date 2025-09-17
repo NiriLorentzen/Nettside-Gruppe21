@@ -1,7 +1,7 @@
-// Navbar HTML as a reusable template
+// Navbar 
 const navbarHTML = `
   <div class="navbar">
-    <img src="images/Logo.svg" width="4%" height="90%">
+    <img src="images/favicon.png" width=auto height="90%">
     <a href="index.html">Om oss</a>
     <a href="medlemmer.html">Medlemmer</a>
   </div>
@@ -13,6 +13,26 @@ function injectNavbar() {
   // Highlight active link
   document.querySelectorAll('.navbar a').forEach(link => {
     if (window.location.pathname.endsWith(link.getAttribute('href'))) {
+      link.classList.add('active');
+    }
+  });
+}
+
+// Footer 
+const footerHTML = `
+  <div class="footer">
+    <p>Gruppe 21</p>
+    <div class="footer-links">
+      <a href="index.html">Om oss</a> 
+      <a href="medlemmer.html">Medlemmer</a>
+    </div>
+  </div>
+`;
+
+function injectFooter() {
+  document.body.insertAdjacentHTML('beforeend', footerHTML);
+  document.querySelectorAll('.footer').forEach(link => {
+    if (window.location.pathname.endsWith(link.getAttribute('href'))){
       link.classList.add('active');
     }
   });
@@ -167,7 +187,8 @@ function closeModal() {
 // On DOMContentLoaded, inject navbar and render members if needed
 window.addEventListener('DOMContentLoaded', () => {
   injectNavbar();
-  renderMembers();  
+  renderMembers();
+  injectFooter();
 
   const modal = document.getElementById("memberModal");
   const closeBtn = document.querySelector(".close");
@@ -179,4 +200,3 @@ window.addEventListener('DOMContentLoaded', () => {
     }
   };
 });
-
