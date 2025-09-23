@@ -66,15 +66,17 @@ const members = [
     age: `25`,
     origin: `Kongsberg`,
     previewDescription: `Engasjert i godt samarbeid og effektivitet`,
-    description: ` Jeg trives godt med prosjektarbeid, og sørger for at både arbeidsprosessen og utviklingen blir utført effektivt og med god kvalitet. 
-    Med fokus på personer i sentrum.
-
-    Jeg har stor interesse i nye teknologier og studiet har latt meg tilegne erfaring i fullstack-utviling, både teoretisk og praktisk.
+    description: ` Jeg trives godt med prosjektarbeid, og å sørge for at både arbeidsprosessen og utviklingen blir utført effektivt og med god kvalitet. 
+    Der jeg setter fokus på personer i sentrum, som er noe jeg tar vidre i min rolle som Scrum Master. 
+    Jeg har stor interesse i nye teknologier, og studiet har gitt meg nyttig erfaring i fullstack-utviling både teoretisk og praktisk.
     Denne erfaringen har vist meg at min største lidenskap er backend-utvikling.
     <br><br>
-    Dette har meg mulighet å bidra med en rekke prosjekter som tok i bruk en rekke ulike teknologier slik som: Java, C#, Python, PostgreSQL og nå også PHP.
-    Videre har disse prosjektene har gitt meg en spesiell interesse for optimalisering av kode og programmer. Siden jeg har fått se hvor hvor viktig og interessant dette er for både de som arbeider, men også produktet. 
-    I tillegg har jeg også god erfaring med teambygging, formidlingsevne og kreativ problemløsning fra tidligere utdanning og jobb.`,
+    Studiet har også gitt meg mulighet å bidra til flere prosjekter som har tatt i bruk en rekke ulike teknologier slik som: Java, C#, Python, PostgreSQL og nylig også PHP.
+    Videre har disse prosjektene gitt meg en spesiell interesse for optimalisering av kode og programmer, fordi jeg har sett hvor avgjørende og interessant dette er for både for utviklere og produktet.    
+    I tilegg har jeg også god erfaring med teambygging, formidlingsevne og kreativ problemløsning fra tidligere utdanning og jobb.
+    <br><br>
+    <strong>Jeg ser frem til vidre samarbeid og nye opplevelser!</strong>
+    `,
     picture: "images/EivindProfBilde.jpg",
     linkedin: "https://www.linkedin.com/in/eivind-hovden-breivik-979241381/",
     mail: "eivind.h.breivik@gmail.com",
@@ -136,7 +138,7 @@ function renderMembers() {
       <img class="Personbilde" src="${m.picture}" alt="Bilde av ${m.name}">
       <div class="medlem_instans_tekst_boks">
         <div>
-          <h2><strong>${m.name}</strong></h2>
+          <h2><strong>${m.name}</strong> år</h2>
           <h3><em>${m.role}</em></h3>
           <h3> ${m.age} år - Fra ${m.origin}</h3>         
           ${m.previewDescription}
