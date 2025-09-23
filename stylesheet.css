@@ -325,6 +325,14 @@ main {
     padding: 0rem;
     padding-right: 0rem;    
 }
+
+.tekst-divider {
+    border: none;
+    border-top: 2px solid #d1d5db;
+    width: 80%;
+    margin: 1.5rem auto 1.5rem auto;
+}
+
 .medlem_instans p {
     margin: 0;
     margin-bottom: 0.4rem;

@@ -141,6 +141,7 @@ function renderMembers() {
         <div>
           <h2><strong>${m.name}</strong> år</h2>
           <h3><em>${m.role}</em></h3>
+          <hr class="tekst-divider">
           <h3> ${m.age} år - Fra ${m.origin}</h3>         
           ${m.previewDescription}
         </div>
