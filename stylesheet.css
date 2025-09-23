@@ -241,6 +241,29 @@ main {
     margin: 0;
     padding: 0.5rem 5rem;
 }
+.Personbilde {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    border-radius:5%;
+    object-fit:cover;
+    margin-bottom:0px;
+    border-style: solid;
+    border-width: 0.5px;
+    border-color: black;
+    padding: 0;
+}
+.personbilde_modal {
+    width: 100%;
+    max-width: 200px; 
+    height: auto;
+    display: block;
+    margin: 0 auto 1rem auto;
+    border-radius: 10%; 
+    object-fit: cover;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    transition: transform 0.3s ease;
+}
 
 @media (max-width: 600px) {
     .footer {
@@ -285,24 +308,13 @@ main {
     background-color: #ececec;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1),
                 0 1px 2px rgba(0, 0, 0, 0.06);
-    text-align: left;
+    text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     margin: 0;
     box-sizing: border-box;
-}
-.Personbilde {
-    width: 100%;
-    max-width: 500px;
-    height: auto;
-    border-radius:5%;
-    object-fit:cover;
-    margin-bottom:0px;
-    border-style: solid;
-    border-width: 0.5px;
-    border-color: black;
-    padding: 0;
+     transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 .medlem_instans_tekst_boks {
     font-family: "Consolas", "Andale Mono", "Lucida Console", monospace;
@@ -311,7 +323,7 @@ main {
     flex-direction: column;
     width: 100%;
     padding: 0rem;
-    padding-right: 0rem;
+    padding-right: 0rem;    
 }
 .medlem_instans p {
     margin: 0;
@@ -320,15 +332,18 @@ main {
 .medlem_instans em {
     margin-left: 0.2rem;
 }
+.medlem_instans:hover {
+    transform: translateY(-5px) scale(1.03);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
 .kontaktinfo {
-    color: black;
-    padding-left: 0rem;
-    padding-right: 0rem;
+    color: black;    
     display: flex;
     align-items: center;
     flex-direction: column;
     align-self: center;
-    padding: 0
+    padding-bottom: 1rem; 
 }
 .kontaktinfo a {
     text-decoration: none;
@@ -342,7 +357,7 @@ main {
     display: flex;
     align-items: center;
     flex-direction: row;
-    padding: 0
+    padding-top: 1rem;
 }
 .tlf_mail {
     font-size: small;
@@ -350,6 +365,7 @@ main {
     padding: 0
 }
 .medlem_attributter {
+    padding: 1rem;
     align-items: center;
     display: flex;
     flex-direction: row;
@@ -373,6 +389,58 @@ main {
 h1 {
     text-align: center;
     font-size: 3rem;
+}
+
+.modal {
+  display: none; 
+  position: fixed;
+  z-index: 2000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.6);
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.modal.show {
+    display: block;
+    opacity: 1;
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 10% auto;
+  padding: 2rem;
+  border: 1px solid #888;
+  width: 80%;
+  max-width: 600px;
+  border-radius: 1rem;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+.modal-content h2 {
+  margin-top: 0;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 2rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+.close:hover {
+  color: black;
+}
+
+
+@media (max-width: 1520px) {
+    .medlem_oversikt {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
 }
 
 @media (max-width: 3000px) {

@@ -45,7 +45,10 @@ const members = [
   {
     name: "Niri August Lorentzen",
     role: "Prosjektleder",
-    description: `Jeg kommer fra Lillestrøm og er 21 år gammel. Jeg er lederen for gruppen, og har stor interesse for backend og frontend utvikling.
+    age: `21`,
+    origin: `Lillestrøm`,
+    previewDescription: `Maskinvare og programvare`,
+    description: `Jeg er lederen for gruppen, og har stor interesse for backend og frontend utvikling.
     <br> Jeg har alltid hatt stor interesse for data og IT, og gjennom studiet har jeg fått erfaring og kunnskap innen organisering av prosjektarbeid, frontend utvikling og backend utvikling.
     <br> Her er det backend og databasearbeid jeg har likt mest og fått best resultater ifra, med bruk av teknologier som PostgreSQL, Docker og Entity Framework.
     <br> Jeg har også mye interesse for frontend og har også drevet en del med Figma for designutvikling under prosjektarbeid. 
@@ -60,7 +63,10 @@ const members = [
   {
     name: "Eivind Hovden Breivik",
     role: "Backend utvikler",
-    description: `Jeg er 25 år gammel og kommer fra Kongsberg, med stor interesse i både maskin og programvare. 
+    age: `25`,
+    origin: `Kongsberg`,
+    previewDescription: `Maskinvare og programvare`,
+    description: `Jeg har stor interesse i både maskin og programvare. 
     <br> Gjennom IT-studiet har jeg tilegnet meg erfaring i frontend- og backend-utvikling, både teoretisk og praktisk. 
     <br> Evnene ble utviklet med en rekke prosjekter med bruk av teknologier som: Java, C#, Python, PostgreSQL og nå også PHP.
     <br> Å gjøre disse prosjektene har gitt meg en spesiell interesse for optimalisering av kode og programmer. 
@@ -74,7 +80,10 @@ const members = [
   {
     name: "William Jondahl",
     role: "Backend utvikler",
-    description: `Jeg er en 21 år gammel student fra Drammen, og er interessert i cybersikkerhet, AI og utvikling. Jeg har praktisk erfaring med C#, Java, PostgreSQL med fokus på webutvikling. 
+    age: `21`,
+    origin: `Drammen`,
+    previewDescription: `Maskinvare og programvare`,
+    description: `Jeg er interessert i cybersikkerhet, AI og utvikling. Jeg har praktisk erfaring med C#, Java, PostgreSQL med fokus på webutvikling. 
     <br> Gjennom studiene har jeg tilegnet team-arbeidsferdigheter som smidig utvikling med Scrum og versjonskontroll med Git.
     <br> Jeg har blitt særlig interessert i cybersikkerhet og vil gjerne utvikle ferdighetene mine innen dette feltet.`,
     picture: "images/williamj.jpg",
@@ -85,7 +94,10 @@ const members = [
   {
     name: "Carl Andreas Arnegard",
     role: "Frontend utvikler",
-    description: `Hei, jeg er 21 år gammel og kommer fra Drammen. Jeg har lenge vært interessert i teknologi og programmering, 
+    age: `21`,
+    origin: `Drammen`,
+    previewDescription: `Maskinvare og programvare`,
+    description: `Jeg har lenge vært interessert i teknologi og programmering, 
     <br>og har erfaring med flere programmeringsspråk som Python, Java, C# og jeg har også jobbet med webutvikling ved bruk av HTML, CSS og JavaScript.
     <br>Jeg studerer nå IT og Informasjonssystemer ved Universitetet i Agder, hvor jeg har fått muligheten til å jobbe med ulike prosjekter som har styrket mine ferdigheter innen både frontend- og backend-utvikling.`,
     picture: "images/CarlBilde.JPG",
@@ -96,7 +108,10 @@ const members = [
   {
     name: "Nicolay Lehne-Torp",
     role: "Fullstack utvikler",
-    description: `Jeg er 21 år gammel og kommer fra Drammen. Jeg har funnet en stor interesse for å skape nettsider og applikasjoner gjennom ulike prosjekter i studiene.
+    age: `21`,
+    origin: `Drammen`,
+    previewDescription: `Maskinvare og programvare`,
+    description: `Jeg har funnet en stor interesse for å skape nettsider og applikasjoner gjennom ulike prosjekter i studiene.
     <br>Jeg har tidligere erfaring med HTML, CSS, Java, JavaScript, Python, C#, PostgreSQL og nå også PHP. Jeg er en person som liker å jobbe i team og har gode samarbeidsevner.`,
     picture: "images/NicolayBilde.JPG",
     linkedin: "https://www.linkedin.com/in/nicolay-lehne-torp-14b62a2ba/",
@@ -109,17 +124,26 @@ const members = [
 function renderMembers() {
   const container = document.querySelector('.medlem_oversikt');
   if (!container) return;
+
   members.forEach(m => {
     const div = document.createElement('div');
     div.className = 'medlem_instans';
     div.innerHTML = `
       <img class="Personbilde" src="${m.picture}" alt="Bilde av ${m.name}">
-      <text class="medlem_instans_tekst_boks">
+      <div class="medlem_instans_tekst_boks">
         <div>
-          <p><strong>${m.name}</strong> – <em>${m.role}</em></p>
-          ${m.description}
+          <h2><strong>${m.name}</strong></h2>
+          <h3><em>${m.role}</em></h3>
+          <h3> ${m.age} år - Fra ${m.origin}</h3>         
+          ${m.previewDescription}
         </div>
-      </text>
+      </div>
+
+      <div class="medlem_attributter">
+        <text>${m.skills[0]}</text>
+        <text>${m.skills[1]}</text>
+        <text>${m.skills[2]}</text>
+      </div>
       <div class="kontaktinfo">
         <a href="${m.linkedin}" target="_blank">
           <div class="linkedin">
@@ -128,15 +152,36 @@ function renderMembers() {
           </div>
         </a>
         <text class="tlf_mail">${m.mail}</text>
-      </div>
-      <div class="medlem_attributter">
-        <text>${m.skills[0]}</text>
-        <text>${m.skills[1]}</text>
-        <text>${m.skills[2]}</text>
-      </div>
+      </div>      
     `;
+
+    // modal event listener
+    div.addEventListener("click", () => openModal(m));
+
     container.appendChild(div);
   });
+}
+
+function openModal(m) {
+  const modal = document.getElementById("memberModal");
+  const modalBody = document.getElementById("modalBody");
+
+  modalBody.innerHTML = `
+    <img class="personbilde_modal" src="${m.picture}" alt="Bilde av ${m.name}">
+    <h2>${m.name}</h2>
+    <h3>${m.role}</h3>
+    <p><strong>Alder:</strong> ${m.age}</p>
+    <p><strong>Fra:</strong> ${m.origin}</p>
+    <hr>
+    <p>${m.description}</p>  
+  `;
+
+  modal.classList.add("show");
+}
+
+function closeModal() {
+  const modal = document.getElementById("memberModal");
+  modal.classList.remove("show");
 }
 
 
@@ -144,11 +189,16 @@ function renderMembers() {
 // On DOMContentLoaded, inject navbar and render members if needed
 window.addEventListener('DOMContentLoaded', () => {
   injectNavbar();
-  injectFooter();
   renderMembers();
+  injectFooter();
 
-  const previewDiv = document.createElement('div');
-  previewDiv.className = 'picture-preview';
-  document.body.appendChild(previewDiv);
+  const modal = document.getElementById("memberModal");
+  const closeBtn = document.querySelector(".close");
+
+  closeBtn.onclick = () => closeModal();
+  window.onclick = (event) => {
+    if (event.target === modal) {
+      closeModal();
+    }
+  };
 });
-
