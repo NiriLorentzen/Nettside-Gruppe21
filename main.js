@@ -44,16 +44,16 @@ function injectFooter() {
 const members = [
   {
     name: "Niri August Lorentzen",
-    role: "Prosjektleder",
+    role: "Prosjektleder & Backend utvikling",
     age: `21`,
     origin: `Lillestrøm`,
     previewDescription: `Interessert i ledelse og backend`,
     description: `Jeg er lederen for gruppen, og har stor interesse for backend og frontend utvikling.
      Jeg har alltid hatt stor interesse for data og IT, og gjennom studiet har jeg fått erfaring og kunnskap innen organisering av prosjektarbeid, frontend utvikling og backend utvikling.
-     Her er det backend og databasearbeid jeg har likt mest og fått best resultater ifra, med bruk av teknologier som PostgreSQL, Docker og Entity Framework.
+     <br>Her er det backend og databasearbeid jeg har likt mest og fått best resultater ifra, med bruk av teknologier som PostgreSQL, Docker og Entity Framework.
      Jeg har også mye interesse for frontend og har også drevet en del med Figma for designutvikling under prosjektarbeid. 
      I løpet av prosjektene og innleveringer har jeg også erkjent gode erfaring med blant annet C#, Python og Java.
-    <strong><br> Jeg trives godt med prosjektarbeid og gleder meg til bachelorprosjekt!</strong>
+    <strong><br><br> Jeg trives godt med prosjektarbeid og gleder meg til bachelorprosjekt!</strong>
     `,
     picture: "images/niri.jpg",
     linkedin: "https://www.linkedin.com/in/niri-a-lorentzen-409916381/",
@@ -66,15 +66,17 @@ const members = [
     age: `25`,
     origin: `Kongsberg`,
     previewDescription: `Engasjert i godt samarbeid og effektivitet`,
-    description: ` Jeg trives godt med prosjektarbeid, og sørger for at både arbeidsprosessen og utviklingen blir utført effektivt og med god kvalitet. 
-    Med fokus på personer i sentrum.
-
-    Jeg har stor interesse i nye teknologier og studiet har latt meg tilegne erfaring i fullstack-utviling, både teoretisk og praktisk.
+    description: ` Jeg trives godt med prosjektarbeid, og å sørge for at både arbeidsprosessen og utviklingen blir utført effektivt og med god kvalitet. 
+    Der jeg setter fokus på personer i sentrum, som er noe jeg tar vidre i min rolle som Scrum Master. 
+    Jeg har stor interesse i nye teknologier, og studiet har gitt meg nyttig erfaring i fullstack-utviling både teoretisk og praktisk.
     Denne erfaringen har vist meg at min største lidenskap er backend-utvikling.
     <br><br>
-    Dette har meg mulighet å bidra med en rekke prosjekter som tok i bruk en rekke ulike teknologier slik som: Java, C#, Python, PostgreSQL og nå også PHP.
-    Videre har disse prosjektene har gitt meg en spesiell interesse for optimalisering av kode og programmer. Siden jeg har fått se hvor hvor viktig og interessant dette er for både de som arbeider, men også produktet. 
-    I tillegg har jeg også god erfaring med teambygging, formidlingsevne og kreativ problemløsning fra tidligere utdanning og jobb.`,
+    Studiet har også gitt meg mulighet å bidra til flere prosjekter som har tatt i bruk en rekke ulike teknologier slik som: Java, C#, Python, PostgreSQL og nylig også PHP.
+    Videre har disse prosjektene gitt meg en spesiell interesse for optimalisering av kode og programmer, fordi jeg har sett hvor avgjørende og interessant dette er for både utviklere og produktet.    
+    I tilegg har jeg også god erfaring med teambygging, formidlingsevne og kreativ problemløsning fra tidligere utdanning og jobb.
+    <br><br>
+    <strong>Jeg ser frem til vidre samarbeid og nye opplevelser!</strong>
+    `,
     picture: "images/EivindProfBilde.jpg",
     linkedin: "https://www.linkedin.com/in/eivind-hovden-breivik-979241381/",
     mail: "eivind.h.breivik@gmail.com",
@@ -101,10 +103,11 @@ const members = [
     role: "Frontend utvikler",
     age: `21`,
     origin: `Drammen`,
-    previewDescription: `Maskinvare og programvare`,
+    previewDescription: `Interesse for teknologi, design og programmering`,
     description: `Jeg har lenge vært interessert i teknologi og programmering, 
-    <br>og har erfaring med flere programmeringsspråk som Python, Java, C# og jeg har også jobbet med webutvikling ved bruk av HTML, CSS og JavaScript.
-    <br>Jeg studerer nå IT og Informasjonssystemer ved Universitetet i Agder, hvor jeg har fått muligheten til å jobbe med ulike prosjekter som har styrket mine ferdigheter innen både frontend- og backend-utvikling.`,
+    <br>og har erfaring med flere programmeringsspråk som Python, Java, C# og jeg har også jobbet med webutvikling ved bruk av HTML, CSS og JavaScript. I tillegg har jeg lyst til å prøve meg på React i fremtiden.
+    <br><br>Jeg studerer nå IT og Informasjonssystemer ved Universitetet i Agder, hvor jeg har fått muligheten til å jobbe med ulike prosjekter som har styrket mine ferdigheter innen både frontend- og backend-utvikling. Jeg har en interesse i design, men fungerer også som en fullstack utvikler. 
+    <br><br><strong>Jeg ser frem til å jobbe med spennende prosjekter og utvikle mine ferdigheter videre.</strong>`,
     picture: "images/CarlBilde.JPG",
     linkedin: "https://www.linkedin.com/in/carl-andreas-arnegard-993996214/",
     mail: "carl.andreas.arnegard@gmail.com",
@@ -115,7 +118,7 @@ const members = [
     role: "Fullstack utvikler",
     age: `21`,
     origin: `Drammen`,
-    previewDescription: `Maskinvare og programvare`,
+    previewDescription: `Interessert i utvikling og teamarbeid`,
     description: `Jeg har veldig lenge vært interessert i teknologi, noe som har utviklet seg videre til en interesse for utvikling og programmering. Gjennom studiet har jeg anskaffet meg kunnskap og erfaring innen både frontend og backend utvikling. Det jeg har jobbet mest med er HTML, CSS, Java, JavaScript, Python, C#, PostgreSQL, Git og nå også PHP. 
     <br>Jeg har jobbet med flere prosjekter og oppgaver igjennom studiet som har vist meg at jeg liker å jobbe i team, samt styrket min interesse for utvikling. 
     <br><strong>Jeg gleder meg til å få gjort et bra bachelorprosjekt som hjelper meg å utvikle meg videre.</strong>`,
@@ -140,6 +143,7 @@ function renderMembers() {
         <div>
           <h2><strong>${m.name}</strong></h2>
           <h3><em>${m.role}</em></h3>
+          <hr class="tekst-divider">
           <h3> ${m.age} år - Fra ${m.origin}</h3>         
           ${m.previewDescription}
         </div>
@@ -176,7 +180,7 @@ function openModal(m) {
     <img class="personbilde_modal" src="${m.picture}" alt="Bilde av ${m.name}">
     <h2>${m.name}</h2>
     <h3>${m.role}</h3>
-    <p><strong>Alder:</strong> ${m.age}</p>
+    <p><strong>Alder:</strong> ${m.age} år</p>
     <p><strong>Fra:</strong> ${m.origin}</p>
     <hr>
     <p>${m.description}</p>  
