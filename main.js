@@ -62,16 +62,19 @@ const members = [
   },
   {
     name: "Eivind Hovden Breivik",
-    role: "Backend utvikler",
+    role: "Backend utvikler & Scrum Master",
     age: `25`,
     origin: `Kongsberg`,
-    previewDescription: `Maskinvare og programvare`,
-    description: `Jeg har stor interesse i både maskin og programvare. 
-    <br> Gjennom IT-studiet har jeg tilegnet meg erfaring i frontend- og backend-utvikling, både teoretisk og praktisk. 
-    <br> Evnene ble utviklet med en rekke prosjekter med bruk av teknologier som: Java, C#, Python, PostgreSQL og nå også PHP.
-    <br> Å gjøre disse prosjektene har gitt meg en spesiell interesse for optimalisering av kode og programmer. 
-    <br> Ettersom tidligere arbeid har vist meg både hvor viktig og interessant dette er. 
-    <br> Forøvrig har jeg også god erfaring med teambygging, formidlingsevne og kreativ problemløsning fra tidligere utdanning og jobb.`,
+    previewDescription: `Engasjert i godt samarbeid og effektivitet`,
+    description: ` Jeg trives godt med prosjektarbeid, og sørger for at både arbeidsprosessen og utviklingen blir utført effektivt og med god kvalitet. 
+    Med fokus på personer i sentrum.
+
+    Jeg har stor interesse i nye teknologier og studiet har latt meg tilegne erfaring i fullstack-utviling, både teoretisk og praktisk.
+    Denne erfaringen har vist meg at min største lidenskap er backend-utvikling.
+    <br><br>
+    Dette har meg mulighet å bidra med en rekke prosjekter som tok i bruk en rekke ulike teknologier slik som: Java, C#, Python, PostgreSQL og nå også PHP.
+    Videre har disse prosjektene har gitt meg en spesiell interesse for optimalisering av kode og programmer. Siden jeg har fått se hvor hvor viktig og interessant dette er for både de som arbeider, men også produktet. 
+    I tillegg har jeg også god erfaring med teambygging, formidlingsevne og kreativ problemløsning fra tidligere utdanning og jobb.`,
     picture: "images/EivindProfBilde.jpg",
     linkedin: "https://www.linkedin.com/in/eivind-hovden-breivik-979241381/",
     mail: "eivind.h.breivik@gmail.com",
