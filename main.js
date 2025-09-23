@@ -50,10 +50,10 @@ const members = [
     previewDescription: `Interessert i ledelse og backend`,
     description: `Jeg er lederen for gruppen, og har stor interesse for backend og frontend utvikling.
      Jeg har alltid hatt stor interesse for data og IT, og gjennom studiet har jeg fått erfaring og kunnskap innen organisering av prosjektarbeid, frontend utvikling og backend utvikling.
-     Her er det backend og databasearbeid jeg har likt mest og fått best resultater ifra, med bruk av teknologier som PostgreSQL, Docker og Entity Framework.
+     <br>Her er det backend og databasearbeid jeg har likt mest og fått best resultater ifra, med bruk av teknologier som PostgreSQL, Docker og Entity Framework.
      Jeg har også mye interesse for frontend og har også drevet en del med Figma for designutvikling under prosjektarbeid. 
      I løpet av prosjektene og innleveringer har jeg også erkjent gode erfaring med blant annet C#, Python og Java.
-    <strong><br> Jeg trives godt med prosjektarbeid og gleder meg til bachelorprosjekt!</strong>
+    <strong><br><br> Jeg trives godt med prosjektarbeid og gleder meg til bachelorprosjekt!</strong>
     `,
     picture: "images/niri.jpg",
     linkedin: "https://www.linkedin.com/in/niri-a-lorentzen-409916381/",
@@ -72,7 +72,7 @@ const members = [
     Denne erfaringen har vist meg at min største lidenskap er backend-utvikling.
     <br><br>
     Studiet har også gitt meg mulighet å bidra til flere prosjekter som har tatt i bruk en rekke ulike teknologier slik som: Java, C#, Python, PostgreSQL og nylig også PHP.
-    Videre har disse prosjektene gitt meg en spesiell interesse for optimalisering av kode og programmer, fordi jeg har sett hvor avgjørende og interessant dette er for både for utviklere og produktet.    
+    Videre har disse prosjektene gitt meg en spesiell interesse for optimalisering av kode og programmer, fordi jeg har sett hvor avgjørende og interessant dette er for både utviklere og produktet.    
     I tilegg har jeg også god erfaring med teambygging, formidlingsevne og kreativ problemløsning fra tidligere utdanning og jobb.
     <br><br>
     <strong>Jeg ser frem til vidre samarbeid og nye opplevelser!</strong>
