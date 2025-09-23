@@ -72,7 +72,7 @@ const members = [
     Denne erfaringen har vist meg at min største lidenskap er backend-utvikling.
     <br><br>
     Studiet har også gitt meg mulighet å bidra til flere prosjekter som har tatt i bruk en rekke ulike teknologier slik som: Java, C#, Python, PostgreSQL og nylig også PHP.
-    Videre har disse prosjektene gitt meg en spesiell interesse for optimalisering av kode og programmer, fordi jeg har sett hvor avgjørende og interessant dette er for både for utviklere og produktet.    
+    Videre har disse prosjektene gitt meg en spesiell interesse for optimalisering av kode og programmer, fordi jeg har sett hvor avgjørende og interessant dette er for både utviklere og produktet.    
     I tilegg har jeg også god erfaring med teambygging, formidlingsevne og kreativ problemløsning fra tidligere utdanning og jobb.
     <br><br>
     <strong>Jeg ser frem til vidre samarbeid og nye opplevelser!</strong>
