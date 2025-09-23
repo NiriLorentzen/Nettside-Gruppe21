@@ -358,11 +358,7 @@ main {
     align-items: center;
     flex-direction: row;
     padding-top: 1rem;
-}
-.tlf_mail {
-    font-size: small;
-    padding-top: 0rem;
-    padding: 0
+    padding-bottom: 0.5rem;
 }
 .medlem_attributter {
     padding: 1rem;
@@ -435,6 +431,12 @@ h1 {
 }
 .close:hover {
   color: black;
+}
+
+.mail {
+    padding: 0;
+    text-decoration: underline;
+    color: blue
 }
 
 
