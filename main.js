@@ -82,13 +82,15 @@ const members = [
   },
   {
     name: "William Jondahl",
-    role: "Backend utvikler",
+    role: "Sikkerhetsansvarlig",
     age: `21`,
     origin: `Drammen`,
-    previewDescription: `Maskinvare og programvare`,
-    description: `Jeg er interessert i cybersikkerhet, AI og utvikling. Jeg har praktisk erfaring med C#, Java, PostgreSQL med fokus på webutvikling. 
+    previewDescription: `Interessert i cybersikkerhet og utvikling`,
+    description: `I løpet av de siste årene har jeg blitt fascinert av cybersikkerhet og kunstig intelligens, ettersom disse er felter i kontinuerlig utvikling med stadig nye gjennombrudd.
+    <br> Jeg har praktisk erfaringen innen C#, Java og PostgreSQL med fokus på webutvikling. 
+    <br> Jeg vil gjerne utvikle ferdighetene mine, samt utforske banebrytende teknologier innen sikkerhet og kunstig intelligens gjennom bachelorprosjektet.
     <br> Gjennom studiene har jeg tilegnet team-arbeidsferdigheter som smidig utvikling med Scrum og versjonskontroll med Git.
-    <br> Jeg har blitt særlig interessert i cybersikkerhet og vil gjerne utvikle ferdighetene mine innen dette feltet.`,
+    <br><strong> Jeg gleder meg til å gjøre det aller meste ut av bachelorprosjektet sammen med gode lagkamerater! </strong>`,
     picture: "images/williamj.jpg",
     linkedin: "https://www.linkedin.com/in/william-jondahl-22b571382/",
     mail: "williamjondahl@gmail.com",
