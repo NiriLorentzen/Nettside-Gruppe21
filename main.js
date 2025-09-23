@@ -115,7 +115,7 @@ const members = [
     role: "Fullstack utvikler",
     age: `21`,
     origin: `Drammen`,
-    previewDescription: `Maskinvare og programvare`,
+    previewDescription: `Interessert i programmering og design`,
     description: `Jeg har veldig lenge vært interessert i teknologi, noe som har utviklet seg videre til en interesse for utvikling og programmering. Gjennom studiet har jeg anskaffet meg kunnskap og erfaring innen både frontend og backend utvikling. Det jeg har jobbet mest med er HTML, CSS, Java, JavaScript, Python, C#, PostgreSQL, Git og nå også PHP. 
     <br>Jeg har jobbet med flere prosjekter og oppgaver igjennom studiet som har vist meg at jeg liker å jobbe i team, samt styrket min interesse for utvikling. 
     <br><strong>Jeg gleder meg til å få gjort et bra bachelorprosjekt som hjelper meg å utvikle meg videre.</strong>`,
