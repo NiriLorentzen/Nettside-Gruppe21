@@ -117,6 +117,29 @@ body {
     margin: 0;
     padding: 0.5rem 5rem;
 }
+.Personbilde {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    border-radius:5%;
+    object-fit:cover;
+    margin-bottom:0px;
+    border-style: solid;
+    border-width: 0.5px;
+    border-color: black;
+    padding: 0;
+}
+.personbilde_modal {
+    width: 100%;
+    max-width: 200px; 
+    height: auto;
+    display: block;
+    margin: 0 auto 1rem auto;
+    border-radius: 10%; 
+    object-fit: cover;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    transition: transform 0.3s ease;
+}
 
 .medlem_oversikt {
     margin: 0;
@@ -144,29 +167,7 @@ body {
     justify-content: flex-start;
     margin: 0;
     box-sizing: border-box;
-}
-.Personbilde {
-    width: 100%;
-    max-width: 500px;
-    height: auto;
-    border-radius:5%;
-    object-fit:cover;
-    margin-bottom:0px;
-    border-style: solid;
-    border-width: 0.5px;
-    border-color: black;
-    padding: 0;
-}
-.personbilde_modal {
-    width: 100%;
-    max-width: 200px; 
-    height: auto;
-    display: block;
-    margin: 0 auto 1rem auto;
-    border-radius: 10%; 
-    object-fit: cover;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
-    transition: transform 0.3s ease;
+     transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 .medlem_instans_tekst_boks {
     font-family: "Consolas", "Andale Mono", "Lucida Console", monospace;
@@ -175,7 +176,7 @@ body {
     flex-direction: column;
     width: 100%;
     padding: 0rem;
-    padding-right: 0rem;
+    padding-right: 0rem;    
 }
 .medlem_instans p {
     margin: 0;
@@ -185,8 +186,9 @@ body {
     margin-left: 0.2rem;
 }
 .medlem_instans:hover {
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.6),
-                0 1px 2px rgba(0, 0, 0, 0.1);
+    transform: translateY(-5px) scale(1.03);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
 }
 .kontaktinfo {
     color: black;    
