@@ -95,7 +95,7 @@ main {
 }
 
 .info-row-upper {
-    margin: 0 auto 12.3rem auto;
+    margin: 0 auto 8rem auto;
 }
 
 .info-box-left, .info-box-right {
@@ -245,7 +245,7 @@ main {
     width: 100%;
     max-width: 500px;
     height: auto;
-    border-radius:5%;
+    border-radius: 5%;
     object-fit:cover;
     margin-bottom:0px;
     border-style: solid;
@@ -324,8 +324,17 @@ main {
     flex-direction: column;
     width: 100%;
     padding: 0rem;
-    padding-right: 0rem;    
+    padding-right: 0rem;
+    padding-bottom: 1rem;    
 }
+
+.tekst-divider {
+    border: none;
+    border-top: 2px solid #d1d5db;
+    width: 80%;
+    margin: 1.5rem auto 1.5rem auto;
+}
+
 .medlem_instans p {
     margin: 0;
     margin-bottom: 0.4rem;
@@ -359,11 +368,7 @@ main {
     align-items: center;
     flex-direction: row;
     padding-top: 1rem;
-}
-.tlf_mail {
-    font-size: small;
-    padding-top: 0rem;
-    padding: 0
+    padding-bottom: 0.5rem;
 }
 .medlem_attributter {
     padding: 1rem;
@@ -371,6 +376,7 @@ main {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    max-width: 100%;
 }
 .medlem_attributter text {
     border-color: #D1D5DB;
@@ -381,10 +387,10 @@ main {
     padding-top: 3px;
     padding-bottom: 3px;
     font-size: large;
-    background-color: gold;
+    background-color: #76b2e6;
 }
 .medlem_attributter text:hover {
-    background-color: lightgreen;
+    background-color: #bcdaf5;
 }
 
 h1 {
@@ -437,6 +443,12 @@ h1 {
   color: black;
 }
 
+.mail {
+    padding: 0;
+    text-decoration: underline;
+    color: blue
+}
+
 @media (max-width: 3000px) {
     .medlem_oversikt {
         grid-template-columns: repeat(3, minmax(250px, 1000px));
@@ -446,5 +458,9 @@ h1 {
 @media (max-width: 1400px) {
   .medlem_oversikt {
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+    .medlem_attributter {
+    padding: 0rem;
+    max-width: 100%;
     }
 }
