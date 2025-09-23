@@ -49,11 +49,11 @@ const members = [
     origin: `Lillestrøm`,
     previewDescription: `Interessert i ledelse og backend`,
     description: `Jeg er lederen for gruppen, og har stor interesse for backend og frontend utvikling.
-    <br> Jeg har alltid hatt stor interesse for data og IT, og gjennom studiet har jeg fått erfaring og kunnskap innen organisering av prosjektarbeid, frontend utvikling og backend utvikling.
-    <br> Her er det backend og databasearbeid jeg har likt mest og fått best resultater ifra, med bruk av teknologier som PostgreSQL, Docker og Entity Framework.
-    <br> Jeg har også mye interesse for frontend og har også drevet en del med Figma for designutvikling under prosjektarbeid. 
-    <br> I løpet av prosjektene og innleveringer har jeg også erkjent gode erfaring med blant annet C#, Python og Java.
-    <br> Jeg trives godt med prosjektarbeid og gleder meg til bachelorprosjekt!
+     Jeg har alltid hatt stor interesse for data og IT, og gjennom studiet har jeg fått erfaring og kunnskap innen organisering av prosjektarbeid, frontend utvikling og backend utvikling.
+     Her er det backend og databasearbeid jeg har likt mest og fått best resultater ifra, med bruk av teknologier som PostgreSQL, Docker og Entity Framework.
+     Jeg har også mye interesse for frontend og har også drevet en del med Figma for designutvikling under prosjektarbeid. 
+     I løpet av prosjektene og innleveringer har jeg også erkjent gode erfaring med blant annet C#, Python og Java.
+    <strong><br> Jeg trives godt med prosjektarbeid og gleder meg til bachelorprosjekt!</strong>
     `,
     picture: "images/niri.jpg",
     linkedin: "https://www.linkedin.com/in/niri-a-lorentzen-409916381/",
@@ -114,8 +114,9 @@ const members = [
     age: `21`,
     origin: `Drammen`,
     previewDescription: `Maskinvare og programvare`,
-    description: `Jeg har funnet en stor interesse for å skape nettsider og applikasjoner gjennom ulike prosjekter i studiene.
-    <br>Jeg har tidligere erfaring med HTML, CSS, Java, JavaScript, Python, C#, PostgreSQL og nå også PHP. Jeg er en person som liker å jobbe i team og har gode samarbeidsevner.`,
+    description: `Jeg har veldig lenge vært interessert i teknologi, noe som har utviklet seg videre til en interesse for utvikling og programmering. Gjennom studiet har jeg anskaffet meg kunnskap og erfaring innen både frontend og backend utvikling. Det jeg har jobbet mest med er HTML, CSS, Java, JavaScript, Python, C#, PostgreSQL, Git og nå også PHP. 
+    <br>Jeg har jobbet med flere prosjekter og oppgaver igjennom studiet som har vist meg at jeg liker å jobbe i team, samt styrket min interesse for utvikling. 
+    <br><strong>Jeg gleder meg til å få gjort et bra bachelorprosjekt som hjelper meg å utvikle meg videre.</strong>`,
     picture: "images/NicolayBilde.JPG",
     linkedin: "https://www.linkedin.com/in/nicolay-lehne-torp-14b62a2ba/",
     mail: "lehnenicolay@gmail.com",
