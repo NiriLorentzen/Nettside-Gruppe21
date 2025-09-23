@@ -447,8 +447,4 @@ h1 {
   .medlem_oversikt {
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     }
-    .personbilde {
-        border-radius: 0;
-    }
-
 }
