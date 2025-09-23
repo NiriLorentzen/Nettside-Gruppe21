@@ -139,7 +139,7 @@ function renderMembers() {
       <img class="Personbilde" src="${m.picture}" alt="Bilde av ${m.name}">
       <div class="medlem_instans_tekst_boks">
         <div>
-          <h2><strong>${m.name}</strong> år</h2>
+          <h2><strong>${m.name}</strong></h2>
           <h3><em>${m.role}</em></h3>
           <h3> ${m.age} år - Fra ${m.origin}</h3>         
           ${m.previewDescription}
@@ -177,7 +177,7 @@ function openModal(m) {
     <img class="personbilde_modal" src="${m.picture}" alt="Bilde av ${m.name}">
     <h2>${m.name}</h2>
     <h3>${m.role}</h3>
-    <p><strong>Alder:</strong> ${m.age}</p>
+    <p><strong>Alder:</strong> ${m.age} år</p>
     <p><strong>Fra:</strong> ${m.origin}</p>
     <hr>
     <p>${m.description}</p>  
