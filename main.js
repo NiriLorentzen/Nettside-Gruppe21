@@ -111,8 +111,9 @@ const members = [
     age: `21`,
     origin: `Drammen`,
     previewDescription: `Maskinvare og programvare`,
-    description: `Jeg har funnet en stor interesse for å skape nettsider og applikasjoner gjennom ulike prosjekter i studiene.
-    <br>Jeg har tidligere erfaring med HTML, CSS, Java, JavaScript, Python, C#, PostgreSQL og nå også PHP. Jeg er en person som liker å jobbe i team og har gode samarbeidsevner.`,
+    description: `Jeg har veldig lenge vært interessert i teknologi, noe som har utviklet seg videre til en interesse for utvikling og programmering. Gjennom studiet har jeg anskaffet meg kunnskap og erfaring innen både frontend og backend utvikling. Det jeg har jobbet mest med er HTML, CSS, Java, JavaScript, Python, C#, PostgreSQL, Git og nå også PHP. 
+    <br>Jeg har jobbet med flere prosjekter og oppgaver igjennom studiet som har vist meg at jeg liker å jobbe i team, samt styrket min interesse for utvikling. 
+    <br><strong>Jeg gleder meg til å få gjort et bra bachelorprosjekt som hjelper meg å utvikle meg videre.</strong>`,
     picture: "images/NicolayBilde.JPG",
     linkedin: "https://www.linkedin.com/in/nicolay-lehne-torp-14b62a2ba/",
     mail: "lehnenicolay@gmail.com",
