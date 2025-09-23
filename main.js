@@ -84,13 +84,15 @@ const members = [
   },
   {
     name: "William Jondahl",
-    role: "Backend utvikler",
+    role: "Sikkerhetsansvarlig",
     age: `21`,
     origin: `Drammen`,
-    previewDescription: `Maskinvare og programvare`,
-    description: `Jeg er interessert i cybersikkerhet, AI og utvikling. Jeg har praktisk erfaring med C#, Java, PostgreSQL med fokus på webutvikling. 
+    previewDescription: `Interessert i cybersikkerhet og utvikling`,
+    description: `I løpet av de siste årene har jeg blitt fascinert av cybersikkerhet og kunstig intelligens, ettersom disse er felter i kontinuerlig utvikling med stadig nye gjennombrudd.
+    <br> Jeg har praktisk erfaringen innen C#, Java og PostgreSQL med fokus på webutvikling. 
+    <br> Jeg vil gjerne utvikle ferdighetene mine, samt utforske banebrytende teknologier innen sikkerhet og kunstig intelligens gjennom bachelorprosjektet.
     <br> Gjennom studiene har jeg tilegnet team-arbeidsferdigheter som smidig utvikling med Scrum og versjonskontroll med Git.
-    <br> Jeg har blitt særlig interessert i cybersikkerhet og vil gjerne utvikle ferdighetene mine innen dette feltet.`,
+    <br><strong> Jeg gleder meg til å gjøre det aller meste ut av bachelorprosjektet sammen med gode lagkamerater! </strong>`,
     picture: "images/williamj.jpg",
     linkedin: "https://www.linkedin.com/in/william-jondahl-22b571382/",
     mail: "williamjondahl@gmail.com",
@@ -116,7 +118,7 @@ const members = [
     role: "Fullstack utvikler",
     age: `21`,
     origin: `Drammen`,
-    previewDescription: `Interessert i programmering og design`,
+    previewDescription: `Interessert i utvikling og teamarbeid`,
     description: `Jeg har veldig lenge vært interessert i teknologi, noe som har utviklet seg videre til en interesse for utvikling og programmering. Gjennom studiet har jeg anskaffet meg kunnskap og erfaring innen både frontend og backend utvikling. Det jeg har jobbet mest med er HTML, CSS, Java, JavaScript, Python, C#, PostgreSQL, Git og nå også PHP. 
     <br>Jeg har jobbet med flere prosjekter og oppgaver igjennom studiet som har vist meg at jeg liker å jobbe i team, samt styrket min interesse for utvikling. 
     <br><strong>Jeg gleder meg til å få gjort et bra bachelorprosjekt som hjelper meg å utvikle meg videre.</strong>`,
@@ -139,8 +141,9 @@ function renderMembers() {
       <img class="Personbilde" src="${m.picture}" alt="Bilde av ${m.name}">
       <div class="medlem_instans_tekst_boks">
         <div>
-          <h2><strong>${m.name}</strong> år</h2>
+          <h2><strong>${m.name}</strong></h2>
           <h3><em>${m.role}</em></h3>
+          <hr class="tekst-divider">
           <h3> ${m.age} år - Fra ${m.origin}</h3>         
           ${m.previewDescription}
         </div>
@@ -179,8 +182,9 @@ function openModal(m) {
     <img class="personbilde_modal" src="${m.picture}" alt="Bilde av ${m.name}">
     <h2>${m.name}</h2>
     <h3>${m.role}</h3>
-    <p><strong>Alder:</strong> ${m.age}</p>
+    <p><strong>Alder:</strong> ${m.age} år</p>
     <p><strong>Fra:</strong> ${m.origin}</p>
+    <p><strong>Epost:</strong> ${m.mail}</p>
     <hr>
     <p>${m.description}</p>  
   `;
