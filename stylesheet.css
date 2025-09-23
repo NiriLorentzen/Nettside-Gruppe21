@@ -304,6 +304,7 @@ main {
     border-style: solid;
     border-radius: 2.6rem;
     border-color: #D1D5DB;
+    border-top-color: whitesmoke;
     border-width: 2px;
     background-color: #ececec;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1),
@@ -314,7 +315,7 @@ main {
     justify-content: flex-start;
     margin: 0;
     box-sizing: border-box;
-     transition: transform 0.25s ease, box-shadow 0.25s ease;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 .medlem_instans_tekst_boks {
     font-family: "Consolas", "Andale Mono", "Lucida Console", monospace;
@@ -446,13 +447,6 @@ h1 {
     padding: 0;
     text-decoration: underline;
     color: blue
-}
-
-
-@media (max-width: 1520px) {
-    .medlem_oversikt {
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    }
 }
 
 @media (max-width: 3000px) {
