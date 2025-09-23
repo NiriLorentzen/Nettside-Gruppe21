@@ -179,6 +179,7 @@ function openModal(m) {
     <h3>${m.role}</h3>
     <p><strong>Alder:</strong> ${m.age} år</p>
     <p><strong>Fra:</strong> ${m.origin}</p>
+    <p><strong>Epost:</strong> ${m.mail}</p>
     <hr>
     <p>${m.description}</p>  
   `;
