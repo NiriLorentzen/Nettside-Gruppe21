@@ -95,7 +95,7 @@ main {
 }
 
 .info-row-upper {
-    margin: 0 auto 12.3rem auto;
+    margin: 0 auto 8rem auto;
 }
 
 .info-box-left, .info-box-right {
@@ -245,7 +245,7 @@ main {
     width: 100%;
     max-width: 500px;
     height: auto;
-    border-radius:5%;
+    border-radius: 5%;
     object-fit:cover;
     margin-bottom:0px;
     border-style: solid;
@@ -370,6 +370,7 @@ main {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    max-width: 100%;
 }
 .medlem_attributter text {
     border-color: #D1D5DB;
@@ -380,10 +381,10 @@ main {
     padding-top: 3px;
     padding-bottom: 3px;
     font-size: large;
-    background-color: gold;
+    background-color: #76b2e6;
 }
 .medlem_attributter text:hover {
-    background-color: lightgreen;
+    background-color: #bcdaf5;
 }
 
 h1 {
@@ -452,5 +453,9 @@ h1 {
 @media (max-width: 1400px) {
   .medlem_oversikt {
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+    .medlem_attributter {
+    padding: 0rem;
+    max-width: 100%;
     }
 }

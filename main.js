@@ -47,7 +47,7 @@ const members = [
     role: "Prosjektleder",
     age: `21`,
     origin: `Lillestrøm`,
-    previewDescription: `Maskinvare og programvare`,
+    previewDescription: `Interessert i ledelse og backend`,
     description: `Jeg er lederen for gruppen, og har stor interesse for backend og frontend utvikling.
     <br> Jeg har alltid hatt stor interesse for data og IT, og gjennom studiet har jeg fått erfaring og kunnskap innen organisering av prosjektarbeid, frontend utvikling og backend utvikling.
     <br> Her er det backend og databasearbeid jeg har likt mest og fått best resultater ifra, med bruk av teknologier som PostgreSQL, Docker og Entity Framework.
@@ -58,7 +58,7 @@ const members = [
     picture: "images/niri.jpg",
     linkedin: "https://www.linkedin.com/in/niri-a-lorentzen-409916381/",
     mail: "niri.lorentzen@gmail.com",
-    skills: ["C#", "PostGreSQL", "Python", "Java"]
+    skills: ["C#", "PostGreSQL", "Python"]
   },
   {
     name: "Eivind Hovden Breivik",
@@ -75,7 +75,7 @@ const members = [
     picture: "images/EivindProfBilde.jpg",
     linkedin: "https://www.linkedin.com/in/eivind-hovden-breivik-979241381/",
     mail: "eivind.h.breivik@gmail.com",
-    skills: ["x", "y", "z"]
+    skills: ["Scrum", "PostGreSQL", "C#"]
   },
   {
     name: "William Jondahl",
@@ -89,7 +89,7 @@ const members = [
     picture: "images/williamj.jpg",
     linkedin: "https://www.linkedin.com/in/william-jondahl-22b571382/",
     mail: "williamjondahl@gmail.com",
-    skills: ["x", "y", "z"]
+    skills: ["Security", "AI", "Java"]
   },
   {
     name: "Carl Andreas Arnegard",
@@ -103,7 +103,7 @@ const members = [
     picture: "images/CarlBilde.JPG",
     linkedin: "https://www.linkedin.com/in/carl-andreas-arnegard-993996214/",
     mail: "carl.andreas.arnegard@gmail.com",
-    skills: ["x", "y", "z"]
+    skills: ["CSS", "C#", "UX"]
   },
   {
     name: "Nicolay Lehne-Torp",
@@ -116,7 +116,7 @@ const members = [
     picture: "images/NicolayBilde.JPG",
     linkedin: "https://www.linkedin.com/in/nicolay-lehne-torp-14b62a2ba/",
     mail: "lehnenicolay@gmail.com",
-    skills: ["x", "y", "z"]
+    skills: ["CSS", "Python", "JS"]
   }
 ];
 
