@@ -155,13 +155,15 @@ function renderMembers() {
         <text>${m.skills[2]}</text>
       </div>
       <div class="kontaktinfo">
-        <a href="${m.linkedin}" target="_blank">
-          <div class="linkedin">
-            <text>Linked</text>
-            <img src="images/LinkedIn_icon.svg">
-          </div>
-        </a>
-        <text class="tlf_mail">${m.mail}</text>
+        <hr class="tekst-divider">
+          <a href="${m.linkedin}" target="_blank">
+            <div class="linkedin">
+              <text>Linked</text>
+              <img src="images/LinkedIn_icon.svg">
+            </div>
+          </a>
+          <a href="mailto:${m.mail}"><text class="mail">${m.mail}</text></a>
+        </hr>
       </div>      
     `;
 
