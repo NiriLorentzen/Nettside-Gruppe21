@@ -44,7 +44,7 @@ function injectFooter() {
 const members = [
   {
     name: "Niri August Lorentzen",
-    role: "Prosjektleder",
+    role: "Prosjektleder & Backend utvikling",
     age: `21`,
     origin: `Lillestrøm`,
     previewDescription: `Interessert i ledelse og backend`,
