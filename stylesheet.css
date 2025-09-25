@@ -8,7 +8,7 @@ html {
 
 body {
     font-family: "Inter", sans-serif;
-    background-color: whitesmoke;
+    background-color: #0C1524;
     padding: 0;
     margin: 0;
     background-size: cover;
@@ -20,8 +20,9 @@ body {
     flex-direction: column;
 }   
 
-main {
-    flex: 1;
+.whitebackground { /* et div element som gjør at bakgrunnen til hovedelementene er hvit, mens faktiske body bakgrunn er samme farge som footer */
+    background-color: whitesmoke;
+    padding-bottom: 2.5rem;
 }
 
 .banner {
@@ -191,7 +192,6 @@ main {
 .footer {
     background-color: #0C1524;
     padding: 1.5rem 0;
-    margin-top: 2.5rem;
     bottom: 0;
     width: 100%;
     display: flex;
