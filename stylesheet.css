@@ -438,7 +438,7 @@ h1 {
 .video iframe {
     width: 70%;
     max-width: 1000px;
-    min-width: 600px;;
+    min-width: 300px;;
     aspect-ratio: 16 / 9;
     border: none;
     border-radius: 12px;
@@ -468,6 +468,13 @@ h1 {
     }
 }
 
+@media (max-width: 900px) {
+    .video iframe {
+        width: 85%;
+        min-width: 280px; /* Smaller min-width for tablets */
+    }
+}
+
 @media (max-width: 600px) {
     .navbar {
         flex-direction: row;
@@ -490,7 +497,8 @@ h1 {
         font-size: small;
         padding: 0;
     }
-    .video {
+    .video iframe{
         max-width: 95%;
+        min-width: unset;
     }
 }
