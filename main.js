@@ -5,7 +5,6 @@ const navbarHTML = `
     <div class="navbar-links">
       <a href="index.html">Om oss</a>
       <a href="medlemmer.html">Medlemmer</a>
-      <a href="promovideo.html">Promo-video</a>
     </div>
   </div>
 `;
@@ -28,7 +27,6 @@ const footerHTML = `
     <div class="footer-links">
       <a href="index.html">Om oss</a> 
       <a href="medlemmer.html">Medlemmer</a>
-      <a href="promovideo.html">Promo-video</a>
     </div>
   </div>
 `;
