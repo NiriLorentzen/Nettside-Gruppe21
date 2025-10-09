@@ -44,7 +44,7 @@ function injectFooter() {
 const members = [
   {
     name: "Niri August Lorentzen",
-    role: "Prosjektleder & Backend utvikling",
+    role: "Prosjektleder & Backend utvikler",
     age: `21`,
     origin: `Lillestrøm`,
     previewDescription: `Interessert i ledelse og backend`,
@@ -62,7 +62,7 @@ const members = [
   },
   {
     name: "Eivind Hovden Breivik",
-    role: "Backend utvikler & Scrum Master",
+    role: "Scrum Master & Backend utvikler",
     age: `25`,
     origin: `Kongsberg`,
     previewDescription: `Engasjert i godt samarbeid og effektivitet`,
