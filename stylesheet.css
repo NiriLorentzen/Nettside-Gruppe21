@@ -506,3 +506,8 @@ h1 {
     max-width: 100%;
     }
 }
+
+#mirror {
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+}
