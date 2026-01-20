@@ -18,10 +18,12 @@
                 <h2>Hva skal vi utføre</h2>
                 <p>
                     I samarbeid med EnTur skal gruppe 21 bidra til å integrere sanntidsdata om fly som skal tas i bruk med EnTurs eksisterende reiseplanlegger. 
+                    Dette prosjektet vil hovedsaklig være backend utvikling med fokus på integrering i eksisterende systemer.
                     
-                    <br><br>Dette vil bidra til mer nøyaktig informasjon om endringer slik som avgangstid, endring av gate og lignende. 
-                    <br>Hensikten med dette prosjektet er å forbedre brukeropplevelse rundt flyreiser. 
-                    <br>Dette skal utvikles med bruk av Kotlin og vil hente data fra Avinors API’er 
+                    <br><br>EnTur har allerede statisk flydata fra deres systemer, sanntidsdata vil dermed 
+                    bidra til mer nøyaktig informasjon om endringer slik som avgangstid, endring av gate og lignende. 
+                    <br>Hensikten med dette prosjektet er å forbedre brukeropplevelse rundt flyreiser samt gi brukere bedre kvalitets data rundt flyreiser. 
+                    <br>Prosjekt Gibil skal utvikles i Kotlin der flydata vil hentes fra Avinors API’er, og vil ta i bruk eksisterende EnTur systemer, GCP og lignende.
                 </p>
             </div>
             <div class="group-photo">
@@ -34,11 +36,13 @@
                 <div class="info-box-left">
                     <h2>Kvalitetsaskepter ved oppgaven</h2>
                     <p>
-                        Det endelige målet med dette prosjektet er at det skal ut i produksjon, dermed er det viktig med god kvalitet. 
-                        <br>Aspekter som spesielt skal fokusere på vil være: pålitelighet, stabilitet, testbarhet og vedlikeholdbarhet. 
+                        Det endelige målet med dette prosjektet er at det skal ut i produksjon, dermed er det viktig med god kvalitet i både arbeid og kode. 
+                        <br>Aspekter som spesielt må settes i fokus vil være: pålitelighet, stabilitet, effektivitet, testbarhet og vedlikeholdbarhet.
+                        <br>Det er utrolig viktig at flydataen som gis er korrekt og gis effektivt ettersom sanntidsdata kun er av verdi når den er fersk og korrekt.
+                        <br>Samtidig er det viktig dataen følger europeiske standarer og er effektivt integrert med eksisterende EnTur prosjekter. 
                         
-                        <br><br>For å sikre denne kvaliteten vil kreve god testing av kode, code reviews og sørge for å følge gode kodestandarder 
-
+                        <br><br>For å sikre denne kvaliteten vil kreve å følge god kodepraksis og testing av kode. Samtidig som det må følge eksisterende kodepraksis i EnTurs andre prosjekter
+                        Videre vil stadige code reviews, refakotrering og kommunikasjon være kontinuerlig viktig for denne kvaliteten.
                     </p>
                 </div>
                 <div class="info-image-right">
@@ -57,19 +61,25 @@
                     <p>
                         <b>Hvordan kvalitetssikrer vi plan?</b> 
 
-                        <br>Vi setter tydelige og klare mål tidlig, hvor vi iterer og stadig bygger på det som kom før. 
-                        Vi skal jobbe agilt med scrum og kjører ukentlige sprints der gruppen sørger for at alle bidrar til en del av planen. 
-                        <br>Gruppen sørger for å ha stand-ups både for å klargjøre blockers, men også å lære av andre gruppemedlemmene 
+                        <br>Vi setter tydelige og klare mål tidlig, hvor vi itererer og stadig bygger på det som kom før. 
+                        Vi skal jobbe agilt med scrum og kjører sprints med varighet av 2 uker, med en pre-sprint første arbeidsuke.
+                        Det skal være stort fokus på kontinuerlig kommunikasjon mellom medlemmer og bedrift for å forsørge kvalitet i både produkt og arbeid. 
+                        <br>Gruppen setter opp daglige interne stand-ups både for å klargjøre dagens plan, eventuelle blockers, men også å lære fra de andre gruppemedlemmene.
+                        <br>Videre sørger også gruppen for et mid-sprint møte for å forsørge fremskritt mot sprint målene, eller setter nye mål hvis fremdrift gikk raskere enn forventet.   
+                        <br>Samt tar gruppen del av EnTurs monday-plan, friday-win og ukentlige onsdags standup.
                         
                         <br><br><b>Hvordan kvalitetssikrer vi backlogg?</b> 
 
-                        <br>Backlogg blir hyppig oppdatert i løpet sprintene, men bygges hovedsakelig ut i løpet av sprint planning. Om visse mål ikke blir oppfylt, oppdateres backlog til å reflektere dette. Gruppen tar i bruk storypoints for å vurdere arbeidsmengde per mål, noe som vil gi et estimat på tidsbruk. 
-                        
+                        <br>Backlogg blir ført opp i "GitHub projects" med hovedfokus på kanban board. Her bruker vi "storypoints" og forsørger hyppig opptatering i løpet sprintene, 
+                        <br> Denne backloggen planlegges hovedsaklig i løpet av sprint planning i starten av hver sprint. Men ettersom stadig ny informasjon blir opparbeidet er det høy sannsynlighet for
+                        stadige innføringer eller endringer i løpet av sprintene. Om visse mål ikke blir oppfylt, oppdateres backlog til å reflektere dette og hvorfor. 
+                                                
                         <br><br><b>Hvordan bruker vi estimater og timerapportering for å bidra til kontroll?</b>
-                        <br>Vi skal ta i bruk storypoints for tids-estimater og arbeidsmengde. Dette har vi brukt i tidligere prosjekter, hvor det har funket bra og vært noe vi har tjent godt på.
+                        <br>Viktigste estimatene av tidsbruk blir gjort via storypoints og prioritet setting i prosjektets kanban board.
+                        <br>Timer blir ikke logført formelt, men gruppen følger EnTurs arbeidstider og jobber i kontorene deres. 
+                        <br>Ved eventuelle større avvik blir det rapportert.    
                     </p>
-                </div>
-                
+                </div>                
             </div>
 
             <hr class="section-divider">
@@ -78,8 +88,11 @@
                 <div class="info-box-left">
                     <h2>Ressurs bruk</h2>
                     <p>
-                        Gjennom god planlegging og utføring av arbeid sikrer vi god ressursbruk av tid. 
-                        <br>Videre blir det viktig å ta i bruk støtte fra EnTur og veileder der det trengs, og å ikke være redd for å spørre dumme spørsmål!  
+                        God ressursbruk er viktig for gruppe 21 der tid og kompetanse blir satt fokus på.
+                        <br>Gjennom god gjennomføring av scrum metodikk, god planlegging og fokusert utføring av arbeid sikrer vi effektiv tidsbruk.
+                        <br>Gruppen har også fått tildelt kontorplass på Bølgen Berekraftsenter som skal være der hoveddelen av arbeidet vil bli utført.
+                        <br>Videre blir det viktig å ta i bruk erfaringen og kunnskapten til EnTur og veileder for å forsørge mest mulig læringsutbytte og kvalitet i produktet
+                        <br>Det skal være ingen for dumme spørsmål!  
                     </p>
                 </div>
                 <div class="info-image-right">
@@ -96,8 +109,11 @@
                 <div class="info-box-right">
                     <h2>Hvorfor kalle prosjektet Gibil?</h2>
                     <p>
-                        EnTur er glade i å oppkalle sine prosjekter etter Mesopotaniske guder, siden da har man et navn som ikke skal nødvendigvis beskrive hva resultatet av prosjektet skal være. Dette har de siden prosjekters scope kan endres underveis og dermed er det bra med et ikke beskrivende navn. Vi valgte dermed å oppkalle våres prosjekt i samme stil. 
-                        <br>Vi valgte Gibil, guden av brann, siden prosjektet er noe vi brenner for og det kommer til å bli rykende bra. 
+                        EnTur er glade i å oppkalle sine prosjekter etter Mesopotaniske guder, siden da har man et navn som ikke skal nødvendigvis beskrive hva resultatet av prosjektet skal være.
+                        <br>Grunnen til dette er fleksibiliteten det gir med muligheter for endringer prosjekters scope eller mål, det ikke beskrivende navnet vil dermed ikke skape forvirring. 
+                        Vi valgte derfor å oppkalle våres prosjekt i samme stil. 
+                        <br>Vi valgte Gibil, guden av brann og smiing ettersom fly ikke er miljøvennlig i forhold til EnTurs andre prosjekte,
+                        og viser til at prosjektet er noe vi brenner for og kommer til å bli rykende bra. 
                     </p>
                 </div>
             </div>
