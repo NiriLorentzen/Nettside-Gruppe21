@@ -5,7 +5,7 @@ const navbarHTML = `
     <div class="navbar-links">
       <a href="index.html">Prosjektet</a>
       <a href="medlemmer.html">Medlemmer</a>
-      <a href="status.html">Medlemmer</a>
+      <a href="status.html">Statusvideo</a>
     </div>
   </div>
 `;
