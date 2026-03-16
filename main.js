@@ -119,11 +119,11 @@ const members = [
     age: `21`,
     origin: `Drammen`,
     previewDescription: `Interessert i utvikling og teamarbeid`,
-    description: `Jeg har veldig lenge vært interessert i teknologi, noe som har utviklet seg videre til en interesse for utvikling og programmering. Gjennom studiet har jeg anskaffet meg kunnskap og erfaring innen både frontend og backend utvikling. Det jeg har jobbet mest med er HTML, CSS, Java, JavaScript, Python, C#, PostgreSQL, Git og nå også PHP. 
+    description: `Jeg har veldig lenge vært interessert i teknologi, noe som har utviklet seg videre til en interesse for utvikling og programmering. Gjennom studiet har jeg anskaffet meg kunnskap og erfaring innen både frontend og backend utvikling. Det jeg har jobbet mest med er Java/Kotlin, JavaScript, Python, C#, PostgreSQL, Git, PHP og Devops som GCP, K8s og CI/CD. 
     <br>Jeg har jobbet med flere prosjekter og oppgaver igjennom studiet som har vist meg at jeg liker å jobbe i team, samt styrket min interesse for utvikling. 
-    <br><strong>Jeg gleder meg til å få gjort et bra bachelorprosjekt som hjelper meg å utvikle meg videre.</strong>`,
+    <br><strong>Jeg ser frem til videre samarbeid og læring.</strong>`,
     picture: "images/NicolayBilde.JPG",
-    linkedin: "https://www.linkedin.com/in/nicolay-lehne-torp-14b62a2ba/",
+    linkedin: "https://www.linkedin.com/in/nicolay-lt",
     mail: "lehnenicolay@gmail.com",
     skills: ["CI/CD", "K8s", "Kotlin"]
   }
