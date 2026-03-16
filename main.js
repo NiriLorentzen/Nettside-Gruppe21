@@ -63,24 +63,24 @@ const members = [
   {
     name: "Eivind Hovden Breivik",
     role: "Scrum Master & Backend utvikler",
-    age: `25`,
+    age: `26`,
     origin: `Kongsberg`,
     previewDescription: `Engasjert i godt samarbeid og effektivitet`,
     description: ` Jeg trives godt med prosjektarbeid, og å sørge for at både arbeidsprosessen og utviklingen blir utført effektivt og med god kvalitet. 
-    Der jeg setter fokus på personer i sentrum, som er noe jeg tar vidre i min rolle som Scrum Master. 
+    Der jeg setter fokus på personer i sentrum, som er noe jeg tar videre i min rolle som Scrum Master. 
     Jeg har stor interesse i nye teknologier, og studiet har gitt meg nyttig erfaring i fullstack-utviling både teoretisk og praktisk.
     Denne erfaringen har vist meg at min største lidenskap er backend-utvikling.
     <br><br>
-    Studiet har også gitt meg mulighet å bidra til flere prosjekter som har tatt i bruk en rekke ulike teknologier slik som: Java, C#, Python, PostgreSQL og nylig også PHP.
-    Videre har disse prosjektene gitt meg en spesiell interesse for optimalisering av kode og programmer, fordi jeg har sett hvor avgjørende og interessant dette er for både utviklere og produktet.    
+    Studiet har også gitt meg mulighet å bidra til flere prosjekter som har tatt i bruk en rekke ulike teknologier slik som: Java, C#, Python, PostgreSQL, PHP og nå Kotlin.
+    Disse prosjektene gitt meg en spesiell interesse for optimalisering av kode og programmer fordi jeg har sett hvor avgjørende og interessant dette er for både utviklere og produktet.    
     I tilegg har jeg også god erfaring med teambygging, formidlingsevne og kreativ problemløsning fra tidligere utdanning og jobb.
     <br><br>
-    <strong>Jeg ser frem til vidre samarbeid og nye opplevelser!</strong>
+    <strong>Jeg ser frem til videre samarbeid og nye opplevelser!</strong>
     `,
     picture: "images/EivindProfBilde.jpg",
     linkedin: "https://www.linkedin.com/in/eivind-hovden-breivik-979241381/",
     mail: "eivind.h.breivik@gmail.com",
-    skills: ["Scrum", "Spring Boot", "C#"]
+    skills: ["Scrum", "Spring Boot", "Kotlin"]
   },
   {
     name: "William Jondahl",
