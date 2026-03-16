@@ -5,7 +5,6 @@ const navbarHTML = `
     <div class="navbar-links">
       <a href="index.html">Prosjektet</a>
       <a href="medlemmer.html">Medlemmer</a>
-      <a href="status.html">Status</a>
     </div>
   </div>
 `;
@@ -53,13 +52,13 @@ const members = [
      Jeg har alltid hatt stor interesse for data og IT, og gjennom studiet har jeg fått erfaring og kunnskap innen organisering av prosjektarbeid, frontend utvikling og backend utvikling.
      <br>Her er det backend og databasearbeid jeg har likt mest og fått best resultater ifra, med bruk av teknologier som PostgreSQL, Docker og Entity Framework.
      Jeg har også mye interesse for frontend og har også drevet en del med Figma for designutvikling under prosjektarbeid. 
-     I løpet av prosjektene og innleveringer har jeg også erkjent gode erfaring med blant annet C#, Python og Java.
+     I løpet av prosjektene og innleveringer har jeg også erkjent gode erfaring med blant annet C#, Kotlin Spring Boot, Python og Java.
     <strong><br><br> Jeg trives godt med prosjektarbeid og gleder meg til bachelorprosjekt!</strong>
     `,
     picture: "images/niri.jpg",
     linkedin: "https://www.linkedin.com/in/niri-a-lorentzen-409916381/",
     mail: "niri.lorentzen@gmail.com",
-    skills: ["C#", "PostGreSQL", "Python"]
+    skills: ["Netex", "CI/CD", "Kotlin"]
   },
   {
     name: "Eivind Hovden Breivik",
@@ -81,7 +80,7 @@ const members = [
     picture: "images/EivindProfBilde.jpg",
     linkedin: "https://www.linkedin.com/in/eivind-hovden-breivik-979241381/",
     mail: "eivind.h.breivik@gmail.com",
-    skills: ["Scrum", "PostGreSQL", "C#"]
+    skills: ["Scrum", "Spring Boot", "C#"]
   },
   {
     name: "William Jondahl",
@@ -97,11 +96,11 @@ const members = [
     picture: "images/williamj.jpg",
     linkedin: "https://www.linkedin.com/in/william-jondahl-22b571382/",
     mail: "williamjondahl@gmail.com",
-    skills: ["Security", "AI", "Java"]
+    skills: ["Kotlin", "SIRI", "Devops"]
   },
   {
     name: "Carl Andreas Arnegard",
-    role: "Frontend utvikler",
+    role: "Backend utvikler\n\n(SIRI)",
     age: `21`,
     origin: `Drammen`,
     previewDescription: `Interesse for teknologi, design og programmering`,
@@ -112,11 +111,11 @@ const members = [
     picture: "images/CarlBilde.JPG",
     linkedin: "https://www.linkedin.com/in/carl-andreas-arnegard-993996214/",
     mail: "carl.andreas.arnegard@gmail.com",
-    skills: ["CSS", "C#", "UX"]
+    skills: ["SIRI", "C#", "Kotlin"]
   },
   {
     name: "Nicolay Lehne-Torp",
-    role: "Fullstack utvikler",
+    role: "Backend utvikler (cloud)",
     age: `21`,
     origin: `Drammen`,
     previewDescription: `Interessert i utvikling og teamarbeid`,
@@ -126,7 +125,7 @@ const members = [
     picture: "images/NicolayBilde.JPG",
     linkedin: "https://www.linkedin.com/in/nicolay-lehne-torp-14b62a2ba/",
     mail: "lehnenicolay@gmail.com",
-    skills: ["CSS", "Python", "JS"]
+    skills: ["CI/CD", "K8s", "Kotlin"]
   }
 ];
 
