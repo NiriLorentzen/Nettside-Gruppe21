@@ -84,7 +84,7 @@ const members = [
   },
   {
     name: "William Jondahl",
-    role: "Sikkerhetsansvarlig",
+    role: "Backend utvikler (SIRI)",
     age: `21`,
     origin: `Drammen`,
     previewDescription: `Interessert i cybersikkerhet og utvikling`,
@@ -100,7 +100,7 @@ const members = [
   },
   {
     name: "Carl Andreas Arnegard",
-    role: "Backend utvikler\n\n(SIRI)",
+    role: "Backend utvikler(SIRI)",
     age: `21`,
     origin: `Drammen`,
     previewDescription: `Interesse for teknologi, design og programmering`,
