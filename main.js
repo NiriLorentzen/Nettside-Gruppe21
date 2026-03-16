@@ -103,10 +103,10 @@ const members = [
     role: "Backend utvikler(SIRI)",
     age: `21`,
     origin: `Drammen`,
-    previewDescription: `Interesse for teknologi, design og programmering`,
-    description: `Jeg har lenge vært interessert i teknologi og programmering, 
-    <br>og har erfaring med flere programmeringsspråk som Python, Java, C# og jeg har også jobbet med webutvikling ved bruk av HTML, CSS og JavaScript. I tillegg har jeg lyst til å prøve meg på React i fremtiden.
-    <br><br>Jeg studerer nå IT og Informasjonssystemer ved Universitetet i Agder, hvor jeg har fått muligheten til å jobbe med ulike prosjekter som har styrket mine ferdigheter innen både frontend- og backend-utvikling. Jeg har en interesse i design, men fungerer også som en fullstack utvikler. 
+    previewDescription: `Interesse for teknologi og programmering`,
+    description: `Jeg har i lang tid vært interessert i teknologi og programmering, 
+    <br>og har erfaring med flere programmeringsspråk som Python, Java, C# og Kotlin og jeg har også jobbet med webutvikling ved bruk av HTML, CSS og JavaScript.
+    <br><br>Jeg studerer nå IT og Informasjonssystemer ved Universitetet i Agder, hvor jeg har fått muligheten til å jobbe med ulike prosjekter som har styrket mine ferdigheter innen både frontend- og backend-utvikling. Det nyligste er da prosjekt Gibil hos Entur der jeg har jobbet i Kotlin. 
     <br><br><strong>Jeg ser frem til å jobbe med spennende prosjekter og utvikle mine ferdigheter videre.</strong>`,
     picture: "images/CarlBilde.JPG",
     linkedin: "https://www.linkedin.com/in/carl-andreas-arnegard-993996214/",
