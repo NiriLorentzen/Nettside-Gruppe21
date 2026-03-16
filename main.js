@@ -53,7 +53,7 @@ const members = [
      <br>Her er det backend og databasearbeid jeg har likt mest og fått best resultater ifra, med bruk av teknologier som PostgreSQL, Docker og Entity Framework.
      Jeg har også mye interesse for frontend og har også drevet en del med Figma for designutvikling under prosjektarbeid. 
      I løpet av prosjektene og innleveringer har jeg også erkjent gode erfaring med blant annet C#, Kotlin Spring Boot, Python og Java.
-    <strong><br><br> Jeg trives godt med prosjektarbeid og gleder meg til bachelorprosjekt!</strong>
+     I bachelorprosjektet har jeg lært veldig mye og fått gode kjenninger med Entur sine systemer og teknologier som Netex, SIRI, GCP(K8s) med CI/CD, og Kotlin Spring Boot.
     `,
     picture: "images/niri.jpg",
     linkedin: "https://www.linkedin.com/in/niri-a-lorentzen-409916381/",
